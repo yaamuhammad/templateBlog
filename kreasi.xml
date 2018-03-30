@@ -732,40 +732,13 @@
       <!-- Start Header  -->
       <div id='header' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
          <div class='header-left'>
-            <b:section id='header-left' maxwidgets='1' showaddelement='yes'>
-              <b:widget id='Image1' locked='false' title='' type='Image'>
-                <b:widget-settings>
-                  <b:widget-setting name='displayUrl'>http://1.bp.blogspot.com/-PqdbIwGB2Ts/Wr4xnKxQnlI/AAAAAAAAA2k/bUT1athHBm442dWmecOCyqKVzwef_kXYACK4BGAYYCw/s1600/Screen%2BShot%2B2018-03-27%2Bat%2B11.16.29%2BPM.png</b:widget-setting>
-                  <b:widget-setting name='displayHeight'>123</b:widget-setting>
-                  <b:widget-setting name='sectionWidth'>231</b:widget-setting>
-                  <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-                  <b:widget-setting name='displayWidth'>150</b:widget-setting>
-                  <b:widget-setting name='link'/>
-                  <b:widget-setting name='caption'/>
-                </b:widget-settings>
-                <b:includable id='main'>
-                <b:if cond='data:title != &quot;&quot;'>
-                  <h2><data:title/></h2>
-                </b:if>
-                <div class='widget-content'>
-                  <b:tag cond='data:link' expr:href='data:link' name='a'>
-                    <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
-                  </b:tag>
-                  <br/>
-                  <b:if cond='data:caption'>
-                    <span class='caption'><data:caption/></span>
-                  </b:if>
-                </div>
-                <b:include name='quickedit'/>
-              </b:includable>
-              </b:widget>
-            </b:section>
+            <b:section id='header-left' maxwidgets='1' showaddelement='yes'/>
          </div>
 
          <div class='header-right'>
             <b:section id='header-right' maxwidgets='1' showaddelement='yes'/>
          </div>
-         
+
       </div> 
       <div class='clear'/>
 
@@ -860,14 +833,14 @@
                <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
                <b:widget-setting name='backlinksLabel'>Link ke posting ini</b:widget-setting>
-               <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+               <b:widget-setting name='showDateHeader'>false</b:widget-setting>
                <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-               <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+               <b:widget-setting name='showCommentLink'>false</b:widget-setting>
                <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
-               <b:widget-setting name='showAuthor'>true</b:widget-setting>
+               <b:widget-setting name='showAuthor'>false</b:widget-setting>
                <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-               <b:widget-setting name='showLabels'>true</b:widget-setting>
+               <b:widget-setting name='showLabels'>false</b:widget-setting>
                <b:widget-setting name='postLabelsLabel'>Label:</b:widget-setting>
                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                <b:widget-setting name='showInlineAds'>false</b:widget-setting>
@@ -1727,10 +1700,11 @@
 
       <div class='clear'/>
       <footer id='footer-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPFooter'>
-         <div class='arlina-border'>
+         <!-- <div class='arlina-border'>
             <span/><span/><span/><span/><span/><span/><span/>
-         </div>
-         <div class='footer'>
+         </div> -->
+         <br/>
+<!--          <div class='footer'>
             <div id='footer-adwidget'>
                <div class='footer-widget' id='footx1'>
                   <b:section class='footer' id='footer1'/>
@@ -1742,15 +1716,15 @@
                   <b:section class='footer' id='footer3'/>
                </div>
             </div>
-         </div>
-         <div style='text-align: center;'>
+         </div> -->
+         <!-- <div style='text-align: center;'>
             <span style='color: white;'>
             <a href='http:/#' rel='nofollow' target='_blank'>Home</a> | 
             <a href='http:/#' target='_blank'>About</a> | 
             <a href='http:/#' rel='nofollow' target='_blank'>Contact</a> | 
             <a href='http:/#' rel='nofollow' target='_blank'>Privacy Policy</a> | 
             <a href='http:/#' rel='nofollow' target='_blank'>Terms Of Service</a></span>
-         </div>
+         </div> -->
          <div id='footer-last'>
             <div style='text-align: center;'>
                Copyright &#169; 
