@@ -10,3 +10,27 @@ Dari Widget Add Javascript
 
 
 
+
+
+-<b:section class='header-right section' id='header-right' maxwidgets='1' showaddelement='yes'>
+-  <b:widget id='HTML97' locked='false' title='' type='HTML' version='1'>
+-    <b:widget-settings>
+-      <b:widget-setting name='content'>&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;
+-&lt;a href=&quot;http://watchdoc.co.id/wp-content/uploads/2017/12/Conti-728x90-banner-ad-REV.gif&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; data-original-height=&quot;400&quot; data-original-width=&quot;600&quot; height=&quot;426&quot; src=&quot;http://watchdoc.co.id/wp-content/uploads/2017/12/Conti-728x90-banner-ad-REV.gif&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+-&lt;br /&gt;</b:widget-setting>
+-    </b:widget-settings>
+-    <b:includable id='main'>
+-  <!-- only display title if it's non-empty -->
+-  <b:if cond='data:title != &quot;&quot;'>
+-    <h2 class='title'><data:title/></h2>
+-  </b:if>
+-  <div class='widget-content'>
+-    <data:content/>
+-  </div>
+-</b:includable>
+-  </b:widget>
+-</b:section>
+
+
+
++<b:section class='header-right section' id='header-right' maxwidgets='1' showaddelement='yes'/>

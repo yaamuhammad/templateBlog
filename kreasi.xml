@@ -115,7 +115,7 @@
             Published        : www.enterblogger.com
             Thanks to        : All supported
             Theme License    : Premium
-            Edit by			  : Babanggi @2018
+            Edit by          : Babanggi @2018
             */
             /* CSS Reset */
             html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
@@ -725,7 +725,7 @@
                <h3>Halaman Tidak Diteukan</h3>
             </div>
             <div class='copyright404'>
-            	&#169; <span id='current-year'/> 
+               &#169; <span id='current-year'/> 
                <a expr:href='data:blog.homepageUrl'>
                   Babanggi
                </a>
@@ -898,10 +898,10 @@
                      </nav>
                      <b:if cond='data:blog.url == data:blog.homepageUrl'>
                      <div class='ct-wrapper' id='feature-posts-section'>
-                     <div class='feature-post padding clearfix'>		
+                     <div class='feature-post padding clearfix'>     
                      <script type='text/javaScript'>
                      document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/?max-results=&quot;+featured_numposts+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=sliderposts\&quot;&gt;&lt;\/script&gt;&quot;);
-                  </script>																																
+                  </script>                                                                                                
          </div>
       </div>
       </b:if>
