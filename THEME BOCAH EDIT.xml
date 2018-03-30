@@ -1821,7 +1821,7 @@ var numposts=4,showpostthumbnails=!0,displaymore=!1,displayseparator=!1,showcomm
 <div id='footer-last'>
 <div style='text-align: center;'>
 Copyright &#169; 
-<span id='current-year'/> <a expr:href='data:blog.homepageUrl' itemprop='creator' itemscope='itemscope' itemtype='http://schema.org/Person'><span itemprop='name'><data:blog.title/></span></a>
+<span id='current-year'/> <a expr:href='data:blog.homepageUrl' itemprop='creator' itemscope='itemscope' itemtype='http://schema.org/Person'><span itemprop='name'>Babanggi</span></a>
 </div>
 <span class='credit-link' style='visibility:hidden;'> By <a class='change' href='https://goo.gl/m63rT4' title='EnterBlogger'/>
 </span></div>
