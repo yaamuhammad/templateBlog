@@ -16,6 +16,14 @@
       <meta content='UHBaYbfdTVx5Xgy2M6SNHU-5JTnOcRmYeQCugQ8rv8s' name='google-site-verification'/>
       <!--Bing Imam Asari -->
       <meta content='6A1303F5ED2DB60C6591513C97D60D23' name='msvalidate.01'/>
+    <!-- ADSENSE -->
+      <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: &quot;ca-pub-6639637450250177&quot;,
+          enable_page_level_ads: true
+        });
+      </script>
 
       <b:if cond='data:blog.pageType == &quot;index&quot;'>
          <title>
@@ -760,17 +768,18 @@
             <li>
                <a href='#' itemprop='url'><span itemprop='name'>Android</span></a>
                <ul class='sub-menu'>
-                  <li><a href='#' itemprop='url'><span itemprop='name'>Kotlin</span></a></li>
-                  <li><a href='#' itemprop='url'><span itemprop='name'>Java</span></a></li>
+                  <li><a href='/search/label/Android Kotlin' itemprop='url'><span itemprop='name'>Kotlin</span></a></li>
+                  <li><a href='/search/label/Android Java' itemprop='url'><span itemprop='name'>Java</span></a></li>
                </ul>
             </li>
             <li>
                <a href='#' itemprop='url'><span itemprop='name'>Ionic</span></a>
                <ul class='sub-menu'>
-                  <li><a href='#' itemprop='url'><span itemprop='name'>Angular </span></a></li>
-                  <li><a href='#' itemprop='url'><span itemprop='name'>Capacitor </span></a></li>
+                  <li><a href='/search/label/Ionic Angular' itemprop='url'><span itemprop='name'>Angular </span></a></li>
+                  <li><a href='/search/label/Ionic Capacitor' itemprop='url'><span itemprop='name'>Capacitor </span></a></li>
                </ul>
             </li>
+         <li><a href='/search/label/Blogger' itemprop='url'><span itemprop='name'>Blogger</span></a></li>
             <!-- <li class='megamenu col-5'>
                <a href='#'><span itemprop='name'>ionic</span></a>
                <script class='java' type='text/javascript'>//<![CDATA[
@@ -841,14 +850,14 @@
                <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
                <b:widget-setting name='backlinksLabel'>Link ke posting ini</b:widget-setting>
-               <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+               <b:widget-setting name='showDateHeader'>false</b:widget-setting>
                <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-               <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+               <b:widget-setting name='showCommentLink'>false</b:widget-setting>
                <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
-               <b:widget-setting name='showAuthor'>true</b:widget-setting>
+               <b:widget-setting name='showAuthor'>false</b:widget-setting>
                <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-               <b:widget-setting name='showLabels'>true</b:widget-setting>
+               <b:widget-setting name='showLabels'>false</b:widget-setting>
                <b:widget-setting name='postLabelsLabel'>Label:</b:widget-setting>
                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                <b:widget-setting name='showInlineAds'>false</b:widget-setting>
@@ -1584,6 +1593,52 @@
                      </ul>
                      </div>
                </b:includable>
+           </b:widget>
+           <b:widget id='Label1' locked='false' title='Labels' type='Label'>
+             <b:widget-settings>
+               <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+               <b:widget-setting name='display'>LIST</b:widget-setting>
+               <b:widget-setting name='selectedLabelsList'/>
+               <b:widget-setting name='showType'>ALL</b:widget-setting>
+               <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+             </b:widget-settings>
+             <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+      <ul>
+        <b:loop values='data:labels' var='label'>
+          <li>
+            <b:if cond='data:blog.url == data:label.url'>
+              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+            <b:else/>
+              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+            </b:if>
+            <b:if cond='data:showFreqNumbers'>
+              <span dir='ltr'>(<data:label.count/>)</span>
+            </b:if>
+          </li>
+        </b:loop>
+      </ul>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
            </b:widget>
            <b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive' version='1'>
              <b:widget-settings>
