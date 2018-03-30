@@ -724,7 +724,7 @@ function removeHtmlTag(e,t){for(var s=e.split("<"),r=0;r<s.length;r++)-1!=s[r].i
 <div id='wrapper'>
 <div id='header' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
    <b:section id='header2' maxwidgets='1' showaddelement='no'>
-     <b:widget id='Header1' locked='true' title='Arlina Template Redesign 2 (Header)' type='Header' version='1'>
+     <b:widget id='Header1' locked='true' title='Ash Haabul Yamiiin (Header)' type='Header' version='1'>
        <b:widget-settings>
          <b:widget-setting name='displayUrl'/>
          <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -845,11 +845,31 @@ function removeHtmlTag(e,t){for(var s=e.split("<"),r=0;r<s.length;r++)-1!=s[r].i
 <div class='close-menu'/>
 <ul class='navlist'>
 <li><a href='/' itemprop='url'><span itemprop='name'>Home</span></a></li>
-<li><a href='#' itemprop='url'><span itemprop='name'>Photography</span></a></li>
-  <li><a href='/error404' itemprop='url'><span itemprop='name'>404</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu Utama</span></a>
+<ul class='sub-menu'>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 1</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 2</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 3</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 4</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 5</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 6</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 7</span></a></li>
+  </ul>
+  </li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu Kedua</span></a>
+<ul class='sub-menu'>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 1</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 2</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 3</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 4</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 5</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 6</span></a></li>
+<li><a href='#' itemprop='url'><span itemprop='name'>Menu 7</span></a></li>
+  </ul>
+  </li>
 
 <li class='megamenu col-5'>
-   <a href='#'><span itemprop='name'>Tips &amp; Trick</span></a>
+   <a href='#'><span itemprop='name'>ionic</span></a>
    <script class='java' type='text/javascript'>//<![CDATA[
       var numposts = 5;
       var outerclass = "sub-menu";
@@ -858,95 +878,24 @@ function removeHtmlTag(e,t){for(var s=e.split("<"),r=0;r<s.length;r++)-1!=s[r].i
       var intag = "div";
       //]]>
    </script>
-   <script class='java' src='/feeds/posts/default/-/Trik?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
-      </li>
-<li class='megamenu col-5'>
-   <a href='#'><span itemprop='name'>Freeware</span></a>
-   <script class='java' type='text/javascript'>//<![CDATA[
-      var numposts = 5;
-      var outerclass = "sub-menu";
-      var starttag = "<li>";
-      var endtag = "</li>";
-      var intag = "div";
-      //]]>
-   </script>
-   <script class='java' src='/feeds/posts/default/-/Freeware?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
-      </li>
-<li class='megamenu col-5'>
-   <a href='#'><span itemprop='name'>Intermezzo</span></a>
-   <script class='java' type='text/javascript'>//<![CDATA[
-      var numposts = 5;
-      var outerclass = "sub-menu";
-      var starttag = "<li>";
-      var endtag = "</li>";
-      var intag = "div";
-      //]]>
-   </script>
-   <script class='java' src='/feeds/posts/default/-/Intermezzo?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
-      </li>
-      <li class='megamenu col-5'><a href='#' itemprop='url'><span itemprop='name'>Blogger</span></a>
-        <script class='java' type='text/javascript'>//<![CDATA[
-          var numposts = 5;
-          var outerclass = "sub-menu";
-          var starttag = "<li>";
-          var endtag = "</li>";
-          var intag = "div";
-          //]]> 
-   </script>
-   <script class='java' src='/feeds/posts/default/-/Travel?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
-      </li>
-      <li class='megamenu col-5'><a href='#' itemprop='url'><span itemprop='name'>Menu 1</span></a>
-        <script class='java' type='text/javascript'>//<![CDATA[
-          var numposts = 5;
-          var outerclass = "sub-menu";
-          var starttag = "<li>";
-          var endtag = "</li>";
-          var intag = "div";
-          //]]> 
-   </script>
- </li>
-  <li class='megamenu col-5'><a href='#' itemprop='url'><span itemprop='name'>Menu 2</span></a>
-        <script class='java' type='text/javascript'>//<![CDATA[
-          var numposts = 5;
-          var outerclass = "sub-menu";
-          var starttag = "<li>";
-          var endtag = "</li>";
-          var intag = "div";
-          //]]> 
-   </script>
+   <script class='java' src='/feeds/posts/default/-/ionic?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
   </li>
- <li class='megamenu col-5'><a href='#' itemprop='url'><span itemprop='name'>Menu 3</span></a>
-        <script class='java' type='text/javascript'>//<![CDATA[
-          var numposts = 5;
-          var outerclass = "sub-menu";
-          var starttag = "<li>";
-          var endtag = "</li>";
-          var intag = "div";
-          //]]> 
+  
+  <li class='megamenu col-5'>
+   <a href='#'><span itemprop='name'>Blogger</span></a>
+   <script class='java' type='text/javascript'>//<![CDATA[
+      var numposts = 5;
+      var outerclass = "sub-menu";
+      var starttag = "<li>";
+      var endtag = "</li>";
+      var intag = "div";
+      //]]>
    </script>
-  </li>
- <li class='megamenu col-5'><a href='#' itemprop='url'><span itemprop='name'>Menu 4</span></a>
-        <script class='java' type='text/javascript'>//<![CDATA[
-          var numposts = 5;
-          var outerclass = "sub-menu";
-          var starttag = "<li>";
-          var endtag = "</li>";
-          var intag = "div";
-          //]]> 
-   </script>
-</li>
- <li class='megamenu col-5'><a href='#' itemprop='url'><span itemprop='name'>Menu 5</span></a>
-        <script class='java' type='text/javascript'>//<![CDATA[
-          var numposts = 5;
-          var outerclass = "sub-menu";
-          var starttag = "<li>";
-          var endtag = "</li>";
-          var intag = "div";
-          //]]> 
-   </script>
+   <script class='java' src='/feeds/posts/default/-/Blogger?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
+  </li>    
 
-   </li>
    </ul>
+
    <div class='search-box'>
    <span class='icon-search'>
    <i class='fa fa-search'/>
@@ -999,7 +948,7 @@ document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/?max-results=&qu
   </b:section>
     <div id='main-wrapper'>
       <b:section class='main' id='main' showaddelement='no'>
-        <b:widget id='Blog1' locked='true' title='Posting Blog' type='Blog' version='1'>
+        <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
           <b:widget-settings>
             <b:widget-setting name='showDateHeader'>true</b:widget-setting>
             <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
