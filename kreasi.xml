@@ -10,14 +10,12 @@
       <link expr:href='data:blog.homepageUrl' rel='openid.delegate'/>
       <link expr:href='data:blog.url' rel='canonical'/>
    
-   <!--discus Imam Asari -->
-    <meta content='IE=9; IE=8; IE=7; IE=EDGE; chrome=1' http-equiv='X-UA-Compatible'/>
-    <!--discus-->
-
-   <meta content='UHBaYbfdTVx5Xgy2M6SNHU-5JTnOcRmYeQCugQ8rv8s' name='google-site-verification'/>
-   
-   <!--Bing Imam Asari -->
-   <meta content='6A1303F5ED2DB60C6591513C97D60D23' name='msvalidate.01'/>
+      <!--discus Imam Asari -->
+      <meta content='IE=9; IE=8; IE=7; IE=EDGE; chrome=1' http-equiv='X-UA-Compatible'/>
+      <!-- Google Webmaster  -->
+      <meta content='UHBaYbfdTVx5Xgy2M6SNHU-5JTnOcRmYeQCugQ8rv8s' name='google-site-verification'/>
+      <!--Bing Imam Asari -->
+      <meta content='6A1303F5ED2DB60C6591513C97D60D23' name='msvalidate.01'/>
 
       <b:if cond='data:blog.pageType == &quot;index&quot;'>
          <title>
@@ -65,13 +63,11 @@
       </b:if>
       <link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
       <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
-      <link href='https://plus.google.com/USER-GOOGLE-PLUS/posts' rel='publisher'/>
+<!--       <link href='https://plus.google.com/USER-GOOGLE-PLUS/posts' rel='publisher'/>
       <link href='https://plus.google.com/USER-GOOGLE-PLUS/about' rel='author'/>
-      <link href='https://plus.google.com/USER-GOOGLE-PLUS' rel='me'/>
-      <meta content='KODE-VALIDASI-GOOGLE-WEBMASTER' name='google-site-verification'/>
-      <meta content='KODE-VALIDASI-BING-WEBMASTER' name='msvalidate.01'/>
+      <link href='https://plus.google.com/USER-GOOGLE-PLUS' rel='me'/> -->
       <meta content='Indonesia' name='geo.placename'/>
-      <meta content='NAMA-ADMIN' name='Author'/>
+      <meta content='Babangi Production' name='Author'/>
       <meta content='general' name='rating'/>
       <meta content='id' name='geo.country'/>
       <!-- [ Social Media Meta Tag ] -->
@@ -100,18 +96,18 @@
             <meta expr:content='data:blog.postThumbnailUrl' property='og:image'/>
          </b:if>
       </b:if>
-      <meta content='https://www.facebook.com/PROFIL-FACEBOOK' property='article:author'/>
+     <!--  <meta content='https://www.facebook.com/PROFIL-FACEBOOK' property='article:author'/>
       <meta content='https://www.facebook.com/FAN-PAGE-FACEBOOK' property='article:publisher'/>
       <meta content='KODE-APLIKASI-FACEBOOK' property='fb:app_id'/>
-      <meta content='KODE-ADMIN-FACEBOOK' property='fb:admins'/>
+      <meta content='KODE-ADMIN-FACEBOOK' property='fb:admins'/> -->
       <meta content='en_US' property='og:locale'/>
       <meta content='en_GB' property='og:locale:alternate'/>
       <meta content='id_ID' property='og:locale:alternate'/>
       <meta content='summary' name='twitter:card'/>
-      <meta expr:content='data:blog.pageTitle' name='twitter:title'/>
-      <meta content='USER-TWITTER' name='twitter:site'/>
-      <meta content='USER-TWITTER' name='twitter:creator'/>
-      <meta content='summary_large_image' name='twitter:card'/>
+      <!-- <meta expr:content='data:blog.pageTitle' name='twitter:title'/> -->
+<!--       <meta content='USER-TWITTER' name='twitter:site'/>
+      <meta content='USER-TWITTER' name='twitter:creator'/> -->
+      <!-- <meta content='summary_large_image' name='twitter:card'/> -->
       <b:skin><![CDATA[
          /*
             Theme Name       : Infinite 3 Responsive Blogger Template
@@ -646,8 +642,8 @@
             .shareplus{padding:0;background:#bdc3c7;cursor:pointer}
             .share_btn li a.fb i,.share_btn li a.tw i{width:20px;text-align:left}
             .share_btn a:hover{background:#333;color:#fff}
-            .share_btn li a.fb{background:#4867aa;padding:0 35px;width:auto}
-            .share_btn li a.tw{background:#1da1f2;padding:0 35px;width:auto}
+            .share_btn li a.fb{background:#4867aa;}
+            .share_btn li a.tw{background:#1da1f2;}
             .share_btn li a.gp{background:#dc4a38}
             .share_btn li a.pt{background:#ca2128}
             .share_btn li a.le{background:#0673ab}
@@ -660,12 +656,6 @@
             /* Item Responsive */
             @media screen and (max-width:768px){
             #main-wrapper{padding:0}
-            .share_btn li a.fb,.share_btn li a.tw{padding:0 37px}
-            ul#relpost_img_sum li{width:47.7%}}
-            @media screen and (max-width:640px){
-            .share_btn li a.fb,.share_btn li a.tw{padding:0 25px}}
-            @media screen and (max-width:320px){
-            .share_btn ul li a.fb,.share_btn ul li a.tw{padding:0 14px}}
             @media only screen and (max-width:960px){
             .bagitiga{-webkit-column-count:2;-moz-column-count:2;column-count:2;}}
             @media only screen and (max-width:640px){
@@ -768,13 +758,20 @@
          <ul class='navlist'>
             <li><a href='/' itemprop='url'><span itemprop='name'>Home</span></a></li>
             <li>
-               <a href='#' itemprop='url'><span itemprop='name'>Menu Utama</span></a>
+               <a href='#' itemprop='url'><span itemprop='name'>Android</span></a>
                <ul class='sub-menu'>
-                  <li><a href='#' itemprop='url'><span itemprop='name'>Menu 1</span></a></li>
-                  <li><a href='#' itemprop='url'><span itemprop='name'>Menu 2</span></a></li>
+                  <li><a href='#' itemprop='url'><span itemprop='name'>Kotlin</span></a></li>
+                  <li><a href='#' itemprop='url'><span itemprop='name'>Java</span></a></li>
                </ul>
             </li>
-            <li class='megamenu col-5'>
+            <li>
+               <a href='#' itemprop='url'><span itemprop='name'>Ionic</span></a>
+               <ul class='sub-menu'>
+                  <li><a href='#' itemprop='url'><span itemprop='name'>Angular </span></a></li>
+                  <li><a href='#' itemprop='url'><span itemprop='name'>Capacitor </span></a></li>
+               </ul>
+            </li>
+            <!-- <li class='megamenu col-5'>
                <a href='#'><span itemprop='name'>ionic</span></a>
                <script class='java' type='text/javascript'>//<![CDATA[
                   var numposts = 5;
@@ -785,7 +782,7 @@
                   //]]>
                </script>
                <script class='java' src='/feeds/posts/default/-/ionic?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
-            </li>
+            </li> -->
          </ul>
 
          <!-- Share Box  -->
@@ -1145,9 +1142,9 @@
             <div class='mobile-link-button' id='blog-pager-home-link'>
             <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
             </div>
-            <div class='mobile-desktop-link'>
+<!--             <div class='mobile-desktop-link'>
             <a class='home-link' expr:href='data:desktopLinkUrl'><data:desktopLinkMsg/></a>
-            </div>
+            </div> -->
             </div>
             <div class='clear'/>
             </b:includable>
@@ -1184,20 +1181,27 @@
             <data:post.body/>
             <div class='clear'/> <!-- clear for photos floats -->
             </div>
-            <div class='post-footer'>
-            <div class='post-footer-line post-footer-line-1'>
+
+            <!-- Mobile Post Footer -->
+            <!-- <div class='post-footer'> -->
+               <!-- <div class='post-footer-line post-footer-line-1'></div>
+               <div class='post-footer-line post-footer-line-2'>
+               <b:if cond='data:top.showMobileShare'>
+                  <div class='mobile-link-button goog-inline-block' id='mobile-share-button'>
+                     <a href='javascript:void(0);'><data:shareMsg/></a>
+                  </div>
+               </b:if>
+               <b:if cond='data:top.showDummy'>
+                  <div class='goog-inline-block dummy-container'><data:post.dummyTag/></div>
+               </b:if>
+               </div> -->
+            <!-- </div> -->
+
+            <div class='share-wrapper' id='share_btnper'>
+               <b:include data='post' name='sharethis'/>
             </div>
-            <div class='post-footer-line post-footer-line-2'>
-            <b:if cond='data:top.showMobileShare'>
-            <div class='mobile-link-button goog-inline-block' id='mobile-share-button'>
-            <a href='javascript:void(0);'><data:shareMsg/></a>
-            </div>
-            </b:if>
-            <b:if cond='data:top.showDummy'>
-            <div class='goog-inline-block dummy-container'><data:post.dummyTag/></div>
-            </b:if>
-            </div>
-            </div>
+
+
             </div>
             <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
             <b:if cond='data:post.showThreadedComments'>
@@ -1399,9 +1403,11 @@
             <!-- Kode Banner/Iklan Anda Di sini -->
             &lt;/div&gt;
             <b:if cond='data:blog.pageType == &quot;item&quot;'>
+            
             <div class='share-wrapper' id='share_btnper'>
-            <b:include data='post' name='sharethis'/>
+               <b:include data='post' name='sharethis'/>
             </div>
+
             <div id='subscribe-box'>
             <div class='emailfield'>
             <form action='http://feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open(&apos;http://feedburner.google.com/fb/a/mailverify?uri=Infiniteidn&apos;, &apos;popupwindow&apos;, &apos;scrollbars=yes,width=550,height=520&apos;);return true' target='popupwindow'>
@@ -1445,46 +1451,33 @@
              <b:includable id='shareButtons' var='post'>
             <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showOrkutButton'><a class='goog-inline-block share-button sb-orkut' expr:href='data:post.sharePostUrl + &quot;&amp;target=orkut&quot;' expr:title='data:top.shareToOrkutMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToOrkutMsg/></span></a></b:if><b:if cond='data:top.showDummy'><div class='goog-inline-block dummy-container'><data:post.dummyTag/></div></b:if>
             </b:includable>
-             <b:includable id='sharethis' var='post'>
-            <div class='share_btn'><ul>
-            <li><a class='fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.url' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=626,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' title='Share to Facebook'><i class='fa fa-facebook'/> <span class='hidetitle'>Share</span></a></li>
-            <li><a class='tw' expr:href='&quot;http://www.blogger.com/share-post.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' target='_blank'><i class='fa fa-twitter'/> <span class='hidetitle'>Share</span></a></li>
-            <li><a class='gp' expr:href='&quot;http://plus.google.com/share?url=&quot; + data:blog.url' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' target='_blank' title='Share on Google+'><i class='fa fa-google-plus'/></a></li>
-            <li><div id='showshare'><span class='shareplus' href='javascript:void(0)' onclick='document.getElementById(&apos;showother&apos;).style.display=&apos;block&apos;;document.getElementById(&apos;showshare&apos;).style.display=&apos;none&apos;'><i aria-hidden='true' class='fa fa-plus'/></span></div></li></ul>
-            <ul class='showother' id='showother'>
-            <li><a class='pt' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:post.url + &quot;&amp;amp;media=&quot; + data:post.thumbnailUrl + &quot;&amp;amp;description= + data:post.title&quot;' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' target='_blank'><i class='fa fa-pinterest'/></a></li>
-            <li><a class='le' expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' target='_blank' title='Share on LinkEdin'><i aria-hidden='true' class='fa fa-linkedin'/></a></li>
-            <li><a class='tr' href='http://www.tumblr.com/share' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' target='_blank'><i class='fa fa-tumblr'/></a></li>
-            <li><a class='ln' expr:href='&quot;https://timeline.line.me/social-plugin/share?url=&quot; + data:post.url' target='_blank' title='Share On Line'>
-            <svg class='icon icons8-LINE' viewBox='0 0 48 48'>
-            <path d='M12.5,42h23c3.59,0,6.5-2.91,6.5-6.5v-23C42,8.91,39.09,6,35.5,6h-23C8.91,6,6,8.91,6,12.5v23      C6,39.09,8.91,42,12.5,42z' style='fill:#00C300;'/>
-            <path d='M37.113,22.417c0-5.865-5.88-10.637-13.107-10.637s-13.108,4.772-13.108,10.637      c0,5.258,4.663,9.662,10.962,10.495c0.427,0.092,1.008,0.282,1.155,0.646c0.132,0.331,0.086,0.85,0.042,1.185      c0,0-0.153,0.925-0.187,1.122c-0.057,0.331-0.263,1.296,1.135,0.707c1.399-0.589,7.548-4.445,10.298-7.611h-0.001      C36.203,26.879,37.113,24.764,37.113,22.417z M18.875,25.907h-2.604c-0.379,0-0.687-0.308-0.687-0.688V20.01      c0-0.379,0.308-0.687,0.687-0.687c0.379,0,0.687,0.308,0.687,0.687v4.521h1.917c0.379,0,0.687,0.308,0.687,0.687      C19.562,25.598,19.254,25.907,18.875,25.907z M21.568,25.219c0,0.379-0.308,0.688-0.687,0.688s-0.687-0.308-0.687-0.688V20.01      c0-0.379,0.308-0.687,0.687-0.687s0.687,0.308,0.687,0.687V25.219z M27.838,25.219c0,0.297-0.188,0.559-0.47,0.652      c-0.071,0.024-0.145,0.036-0.218,0.036c-0.215,0-0.42-0.103-0.549-0.275l-2.669-3.635v3.222c0,0.379-0.308,0.688-0.688,0.688      c-0.379,0-0.688-0.308-0.688-0.688V20.01c0-0.296,0.189-0.558,0.47-0.652c0.071-0.024,0.144-0.035,0.218-0.035      c0.214,0,0.42,0.103,0.549,0.275l2.67,3.635V20.01c0-0.379,0.309-0.687,0.688-0.687c0.379,0,0.687,0.308,0.687,0.687V25.219z      M32.052,21.927c0.379,0,0.688,0.308,0.688,0.688c0,0.379-0.308,0.687-0.688,0.687h-1.917v1.23h1.917      c0.379,0,0.688,0.308,0.688,0.687c0,0.379-0.309,0.688-0.688,0.688h-2.604c-0.378,0-0.687-0.308-0.687-0.688v-2.603      c0-0.001,0-0.001,0-0.001c0,0,0-0.001,0-0.001v-2.601c0-0.001,0-0.001,0-0.002c0-0.379,0.308-0.687,0.687-0.687h2.604      c0.379,0,0.688,0.308,0.688,0.687s-0.308,0.687-0.688,0.687h-1.917v1.23H32.052z' style='fill:#FFFFFF;'/>
-            </svg>
-            </a></li>
-            <li><whatsapp expr:href='data:post.url' expr:text='data:post.title'/><a class='wa' data-action='share/whatsapp/share' href='idntheme'><i aria-hidden='true' class='fa fa-whatsapp' style='clear:both;font-size:24px!important'/></a></li>
-            <li><a class='em' expr:href='&quot;http://www.blogger.com/share-post.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;target=email&quot;' expr:title='data:top.emailThisMsg' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' target='_blank'><i class='fa fa-envelope-o'/></a></li>
-            <b:if cond='data:blog.isMobileRequest == &quot;true&quot; and data:blog.pageType == &quot;item&quot;'>
-            <li><a class='bm' expr:href='&quot;bbmi://api/share?message=&quot; + data:post.url + &quot;?ref=bbm&amp;userCustomMessage=&quot; + data:post.title' target='_blank' title='Share On BBM'>
-            <svg class='icon BlackBerry-Icon' viewBox='-350 0 5950 8390'>
-            <rect height='5600' rx='600' ry='600' style='fill: black;width:40px;overflow:hidden' width='6500'/>
-            <g>
-            <path d='M1327 885l2018 0c141,0 269,58 361,150 93,93 150,221 150,361l0 1457c0,141 -57,268 -150,361 -92,93 -220,150 -361,150l-1584 0 -724 737c64,-258 143,-487 226,-741 -115,-15 -219,-68 -297,-146 -93,-93 -150,-220 -150,-361l0 -1457c0,-140 57,-268 150,-361 92,-92 220,-150 361,-150zm2018 135l-2018 0c-104,0 -197,43 -266,111 -68,68 -110,162 -110,265l0 1457c0,103 42,197 110,265 69,69 162,111 266,111l27 0 90 0 -26 87c-11,37 -57,177 -102,312l369 -379 20 -20 28 0 1612 0c104,0 198,-42 266,-111 68,-68 110,-162 110,-265l0 -1457c0,-103 -42,-197 -110,-265 -68,-68 -162,-111 -266,-111z' style='fill: white; fill-rule: nonzero;'/>
-            <path d='M1655 1452l310 0c91,0 149,75 129,166l0 0c-19,91 -110,166 -201,166l-310 0 72 -332z' style='fill: white;'/>
-            <path d='M1565 1938l309 0c91,0 149,74 130,165l0 0c-20,92 -111,166 -202,166l-310 0 73 -331z' style='fill: white;'/>
-            <path d='M2291 1452l309 0c91,0 150,75 130,166l0 0c-20,91 -111,166 -202,166l-309 0 72 -332z' style='fill: white;'/>
-            <path d='M2200 1938l309 0c92,0 150,74 130,165l0 0c-20,92 -111,166 -202,166l-309 0 72 -331z' style='fill: white;'/>
-            <path d='M2872 1748l309 0c91,0 149,74 130,165l0 0c-20,92 -111,166 -202,166l-310 0 73 -331z' style='fill: white;'/>
-            <path d='M2781 2233l309 0c91,0 150,75 130,166l0 0c-20,91 -111,166 -202,166l-309 0 72 -332z' style='fill: white;'/>
-            <path d='M2118 2419l309 0c91,0 150,75 130,166l0 0c-20,91 -111,166 -202,166l-309 0 72 -332z' style='fill: white;'/>
-            <path d='M3819 1091l10 0c233,0 423,190 423,422l0 1715c0,232 -190,422 -423,422l-13 0 225 735 -719 -735 -1224 0c-165,0 -308,-96 -378,-235 17,2 34,2 51,2l1586 0c301,0 548,-246 548,-547l0 -1486c0,-107 -32,-208 -86,-293z' style='fill: white;'/>
-            </g>
-            </svg>
-            </a></li>
-            </b:if>
-            <li><div id='showshare'><span class='shareplus' href='javascript:void(0)' onclick='document.getElementById(&apos;showother&apos;).style.display=&apos;none&apos;;document.getElementById(&apos;showshare&apos;).style.display=&apos;block&apos;'><i aria-hidden='true' class='fa fa-minus'/></span></div></li>
-            </ul>
-            </div>
+            
+            <b:includable id='sharethis' var='post'>
+               <div class='share_btn'><ul>
+               <li><a class='fb' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:blog.url' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=626,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' title='Share to Facebook'><i class='fa fa-facebook'/></a></li>
+               <li><a class='tw' expr:href='&quot;http://www.blogger.com/share-post.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' target='_blank'><i class='fa fa-twitter'/></a></li>
+               <li><a class='gp' expr:href='&quot;http://plus.google.com/share?url=&quot; + data:blog.url' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' target='_blank' title='Share on Google+'><i class='fa fa-google-plus'/></a></li>
+               <!-- <li><a class='pt' expr:href='&quot;http://pinterest.com/pin/create/button/?url=&quot; + data:post.url + &quot;&amp;amp;media=&quot; + data:post.thumbnailUrl + &quot;&amp;amp;description= + data:post.title&quot;' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' target='_blank'><i class='fa fa-pinterest'/></a></li> -->
+               <li><a class='le' expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=&quot; + data:post.url + &quot;&amp;amp;title=&quot; + data:post.title + &quot;&amp;amp;summary=&quot; + data:post.snippets' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' target='_blank' title='Share on LinkEdin'><i aria-hidden='true' class='fa fa-linkedin'/></a></li>
+
+               <!-- <li><div id='showshare'><span class='shareplus' href='javascript:void(0)' onclick='document.getElementById(&apos;showother&apos;).style.display=&apos;block&apos;;document.getElementById(&apos;showshare&apos;).style.display=&apos;none&apos;'><i aria-hidden='true' class='fa fa-plus'/></span></div></li> -->
+               </ul>
+               <!-- <ul class='showother' id='showother'>
+               <li><a class='tr' href='http://www.tumblr.com/share' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' target='_blank'><i class='fa fa-tumblr'/></a></li>
+               <li><a class='ln' expr:href='&quot;https://timeline.line.me/social-plugin/share?url=&quot; + data:post.url' target='_blank' title='Share On Line'>
+               <svg class='icon icons8-LINE' viewBox='0 0 48 48'>
+               <path d='M12.5,42h23c3.59,0,6.5-2.91,6.5-6.5v-23C42,8.91,39.09,6,35.5,6h-23C8.91,6,6,8.91,6,12.5v23      C6,39.09,8.91,42,12.5,42z' style='fill:#00C300;'/>
+               <path d='M37.113,22.417c0-5.865-5.88-10.637-13.107-10.637s-13.108,4.772-13.108,10.637      c0,5.258,4.663,9.662,10.962,10.495c0.427,0.092,1.008,0.282,1.155,0.646c0.132,0.331,0.086,0.85,0.042,1.185      c0,0-0.153,0.925-0.187,1.122c-0.057,0.331-0.263,1.296,1.135,0.707c1.399-0.589,7.548-4.445,10.298-7.611h-0.001      C36.203,26.879,37.113,24.764,37.113,22.417z M18.875,25.907h-2.604c-0.379,0-0.687-0.308-0.687-0.688V20.01      c0-0.379,0.308-0.687,0.687-0.687c0.379,0,0.687,0.308,0.687,0.687v4.521h1.917c0.379,0,0.687,0.308,0.687,0.687      C19.562,25.598,19.254,25.907,18.875,25.907z M21.568,25.219c0,0.379-0.308,0.688-0.687,0.688s-0.687-0.308-0.687-0.688V20.01      c0-0.379,0.308-0.687,0.687-0.687s0.687,0.308,0.687,0.687V25.219z M27.838,25.219c0,0.297-0.188,0.559-0.47,0.652      c-0.071,0.024-0.145,0.036-0.218,0.036c-0.215,0-0.42-0.103-0.549-0.275l-2.669-3.635v3.222c0,0.379-0.308,0.688-0.688,0.688      c-0.379,0-0.688-0.308-0.688-0.688V20.01c0-0.296,0.189-0.558,0.47-0.652c0.071-0.024,0.144-0.035,0.218-0.035      c0.214,0,0.42,0.103,0.549,0.275l2.67,3.635V20.01c0-0.379,0.309-0.687,0.688-0.687c0.379,0,0.687,0.308,0.687,0.687V25.219z      M32.052,21.927c0.379,0,0.688,0.308,0.688,0.688c0,0.379-0.308,0.687-0.688,0.687h-1.917v1.23h1.917      c0.379,0,0.688,0.308,0.688,0.687c0,0.379-0.309,0.688-0.688,0.688h-2.604c-0.378,0-0.687-0.308-0.687-0.688v-2.603      c0-0.001,0-0.001,0-0.001c0,0,0-0.001,0-0.001v-2.601c0-0.001,0-0.001,0-0.002c0-0.379,0.308-0.687,0.687-0.687h2.604      c0.379,0,0.688,0.308,0.688,0.687s-0.308,0.687-0.688,0.687h-1.917v1.23H32.052z' style='fill:#FFFFFF;'/>
+               </svg>
+               </a></li>
+               <li><whatsapp expr:href='data:post.url' expr:text='data:post.title'/><a class='wa' data-action='share/whatsapp/share' href='idntheme'><i aria-hidden='true' class='fa fa-whatsapp' style='clear:both;font-size:24px!important'/></a></li>
+               <li><a class='em' expr:href='&quot;http://www.blogger.com/share-post.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;target=email&quot;' expr:title='data:top.emailThisMsg' onclick='window.open(this.href,&quot;popupwindow&quot;,&quot;status=0,height=500,width=500,resizable=0,top=50,left=100&quot;);return false;' rel='nofollow' target='_blank'><i class='fa fa-envelope-o'/></a></li>
+
+               <li><div id='showshare'><span class='shareplus' href='javascript:void(0)' onclick='document.getElementById(&apos;showother&apos;).style.display=&apos;none&apos;;document.getElementById(&apos;showshare&apos;).style.display=&apos;block&apos;'><i aria-hidden='true' class='fa fa-minus'/></span></div></li>
+               </ul> -->
+               </div>
             </b:includable>
+
              <b:includable id='status-message'>
             <b:if cond='data:navMessage'>
             <div class='status-msg-wrap'>
@@ -1784,8 +1777,9 @@
                //]]>
             </script>
          </b:if>
+      </b:if>
          <script type='text/javascript'>
-            var disqus_shortname = &#39;chaya-template&#39;;
+            var disqus_shortname = &#39;https-blog-babanggi-com&#39;;
             var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
             if (!disqus_blogger_current_url.length) {
             disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
@@ -1832,7 +1826,6 @@
             function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://cdn.rawgit.com/Arlina-Design/FlamingTree/master/highlightpro.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
             //]]>
          </script>
-      </b:if>
       <div id='fb-root'/>
       <script src='http://connect.facebook.net/en_US/all.js#xfbml=1'/>
       <b:include data='blog' name='google-analytics'/>
