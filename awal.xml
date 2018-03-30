@@ -96,9 +96,9 @@ Theme Name       : Infinite 3 Responsive Blogger Template
 Theme Published  : September 2017
 Theme Base Color : Light
 Theme Style      : Disqus Comment
-Theme Designer   : Arlina Design
+Theme Designer   : Arlina Design   | Chaya Bulan Saputra
 Designer         : www.arlinadzgn.com
-Published        : www.idntheme.com
+Published        : www.enterblogger.com
 Thanks to        : All supported
 Theme License    : Premium
 */
@@ -815,12 +815,9 @@ function removeHtmlTag(e,t){for(var s=e.split("<"),r=0;r<s.length;r++)-1!=s[r].i
 <b:section class='header-right section' id='header-right' maxwidgets='1' showaddelement='yes'>
   <b:widget id='HTML97' locked='false' title='' type='HTML' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'>&lt;div class=&quot;lalulintas&quot;&gt;&lt;span class=&quot;rambuhijau&quot;&gt;Your Ads Here&lt;/span&gt;
-&lt;/div&gt;
-&lt;style scoped=&#39;&#39; type=&#39;text/css&#39;&gt;
-.lalulintas{width:100%;height:100px;background:#f4f5f6;margin:0 auto;position:relative;}
-.rambuhijau{position:absolute;display:block;color:#95a5a6;text-align:center;text-transform:uppercase;letter-spacing:2px;font-size:1.6rem;padding:10px;margin:5px;left:0;right:0;top:0;bottom:0;font-weight:700;line-height:4.4rem}
-&lt;/style&gt;</b:widget-setting>
+      <b:widget-setting name='content'>&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;
+&lt;a href=&quot;http://watchdoc.co.id/wp-content/uploads/2017/12/Conti-728x90-banner-ad-REV.gif&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; data-original-height=&quot;400&quot; data-original-width=&quot;600&quot; height=&quot;426&quot; src=&quot;http://watchdoc.co.id/wp-content/uploads/2017/12/Conti-728x90-banner-ad-REV.gif&quot; width=&quot;640&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;br /&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -880,22 +877,8 @@ function removeHtmlTag(e,t){for(var s=e.split("<"),r=0;r<s.length;r++)-1!=s[r].i
    </script>
    <script class='java' src='/feeds/posts/default/-/ionic?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
   </li>
-  
-  <li class='megamenu col-5'>
-   <a href='#'><span itemprop='name'>Blogger</span></a>
-   <script class='java' type='text/javascript'>//<![CDATA[
-      var numposts = 5;
-      var outerclass = "sub-menu";
-      var starttag = "<li>";
-      var endtag = "</li>";
-      var intag = "div";
-      //]]>
-   </script>
-   <script class='java' src='/feeds/posts/default/-/Blogger?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
-  </li>    
-
+      
    </ul>
-
    <div class='search-box'>
    <span class='icon-search'>
    <i class='fa fa-search'/>
@@ -927,14 +910,6 @@ document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/?max-results=&qu
   <div id='content-wrapper' itemscope='itemscope' itemtype='http://schema.org/Blog' role='main'>
   <b:section class='banner section' id='banner' maxwidgets='1' showaddelement='yes'>
     <b:widget id='HTML96' locked='false' title='' type='HTML' version='1'>
-      <b:widget-settings>
-        <b:widget-setting name='content'>&lt;div class=&quot;lalulintas&quot;&gt;&lt;span class=&quot;rambuhijau&quot;&gt;Your Ads Here&lt;/span&gt;
-&lt;/div&gt;
-&lt;style scoped=&#39;&#39; type=&#39;text/css&#39;&gt;
-.lalulintas{width:100%;height:100px;background:#f4f5f6;margin:0 auto;position:relative;}
-.rambuhijau{position:absolute;display:block;color:#95a5a6;text-align:center;text-transform:uppercase;letter-spacing:2px;font-size:1.6rem;padding:10px;margin:5px;left:0;right:0;top:0;bottom:0;font-weight:700;line-height:4.4rem}
-&lt;/style&gt;</b:widget-setting>
-      </b:widget-settings>
       <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -950,25 +925,29 @@ document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/?max-results=&qu
       <b:section class='main' id='main' showaddelement='no'>
         <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
           <b:widget-settings>
-            <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-            <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+            <b:widget-setting name='commentLabel'>komentar</b:widget-setting>
             <b:widget-setting name='showShareButtons'>false</b:widget-setting>
             <b:widget-setting name='authorLabel'>By</b:widget-setting>
+            <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+            <b:widget-setting name='timestampLabel'>a la/s</b:widget-setting>
+            <b:widget-setting name='reactionsLabel'>Reaksi:</b:widget-setting>
+            <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+            <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+            <b:widget-setting name='showLocation'>false</b:widget-setting>
+            <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+            <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+            <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+            <b:widget-setting name='backlinksLabel'>Link ke posting ini</b:widget-setting>
+            <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+            <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
             <b:widget-setting name='showCommentLink'>true</b:widget-setting>
             <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
             <b:widget-setting name='showAuthor'>true</b:widget-setting>
             <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
-            <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
             <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-            <b:widget-setting name='timestampLabel'>a la/s</b:widget-setting>
-            <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-            <b:widget-setting name='style.layout'>1x1</b:widget-setting>
             <b:widget-setting name='showLabels'>true</b:widget-setting>
-            <b:widget-setting name='showLocation'>false</b:widget-setting>
-            <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-            <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+            <b:widget-setting name='postLabelsLabel'>Label:</b:widget-setting>
             <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-            <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
             <b:widget-setting name='showInlineAds'>false</b:widget-setting>
             <b:widget-setting name='showReactions'>false</b:widget-setting>
           </b:widget-settings>
@@ -1677,6 +1656,34 @@ function initialize() {google.annotations.setApplicationId(<data:top.blogspotRev
   </div>
 </b:includable>
       </b:widget>
+      <b:widget id='HTML99' locked='false' title='Updates' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>&lt;style scoped=&#39;&#39; type=&#39;text/css&#39;&gt;
+ul.recent_posts_arlina li{display:inline-block;position:relative;width:100%;margin:0;padding:8px 0;transition:all .3s linear;}
+ul.recent_posts_arlina li:last-child {border:0;}
+.recent_posts_arlina .wrapinfo{margin:0 10px 0 0;overflow:hidden;z-index:2;display:block;position:relative;border-radius:0;width:100px;height:auto;float:left}
+ul.recent_posts_arlina li img.recent_thumb{width:100%;height:auto}
+.recent_posts_arlina {float:left;width:100%;margin:10px 10px 5px 0px;padding:0;font-size:.9rem;}
+ul.recent_posts_arlina li a{color:#202020;font-size:14px;font-weight:400;line-height:normal}
+ul.recent_posts_arlina li a:hover{color:#ec2028}
+.recent_posts_arlina i{font-style:normal;color:#999;font-size:13px}
+&lt;/style&gt;
+&lt;script style=&#39;text/javascript&#39; src=&#39;https://cdn.rawgit.com/Arlina-Design/FlamingTree/master/recentpostarlina.js&#39;&gt;&lt;/script&gt;
+&lt;script style=&#39;text/javascript&#39;&gt;
+var numposts=4,showpostthumbnails=!0,displaymore=!1,displayseparator=!1,showcommentnum=!1,showpostdate=!1,showpostsummary=!1,numchars=62;
+&lt;/script&gt;
+&lt;script src=&#39;/feeds/posts/default?orderby=published&amp;alt=json-in-script&amp;callback=recentpostinfoarlina&#39;&gt;&lt;/script&gt;</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='ripplelink title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+      </b:widget>
       <b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive' version='1'>
         <b:widget-settings>
           <b:widget-setting name='showStyle'>MENU</b:widget-setting>
@@ -1756,34 +1763,6 @@ function initialize() {google.annotations.setApplicationId(<data:top.blogspotRev
   </a>
 </b:includable>
       </b:widget>
-      <b:widget id='HTML99' locked='false' title='Updates' type='HTML' version='1'>
-        <b:widget-settings>
-          <b:widget-setting name='content'>&lt;style scoped=&#39;&#39; type=&#39;text/css&#39;&gt;
-ul.recent_posts_arlina li{display:inline-block;position:relative;width:100%;margin:0;padding:8px 0;transition:all .3s linear;}
-ul.recent_posts_arlina li:last-child {border:0;}
-.recent_posts_arlina .wrapinfo{margin:0 10px 0 0;overflow:hidden;z-index:2;display:block;position:relative;border-radius:0;width:100px;height:auto;float:left}
-ul.recent_posts_arlina li img.recent_thumb{width:100%;height:auto}
-.recent_posts_arlina {float:left;width:100%;margin:10px 10px 5px 0px;padding:0;font-size:.9rem;}
-ul.recent_posts_arlina li a{color:#202020;font-size:14px;font-weight:400;line-height:normal}
-ul.recent_posts_arlina li a:hover{color:#ec2028}
-.recent_posts_arlina i{font-style:normal;color:#999;font-size:13px}
-&lt;/style&gt;
-&lt;script style=&#39;text/javascript&#39; src=&#39;https://cdn.rawgit.com/Arlina-Design/FlamingTree/master/recentpostarlina.js&#39;&gt;&lt;/script&gt;
-&lt;script style=&#39;text/javascript&#39;&gt;
-var numposts=4,showpostthumbnails=!0,displaymore=!1,displayseparator=!1,showcommentnum=!1,showpostdate=!1,showpostsummary=!1,numchars=62;
-&lt;/script&gt;
-&lt;script src=&#39;/feeds/posts/default?orderby=published&amp;alt=json-in-script&amp;callback=recentpostinfoarlina&#39;&gt;&lt;/script&gt;</b:widget-setting>
-        </b:widget-settings>
-        <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='ripplelink title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-      </b:widget>
     </b:section>
 </div>
 </div>
@@ -1840,7 +1819,11 @@ var numposts=4,showpostthumbnails=!0,displaymore=!1,displayseparator=!1,showcomm
 <a href='http:/#' rel='nofollow' target='_blank'>Terms Of Service</a></span></div>
 
 <div id='footer-last'>
-Copyright &#169; <span id='current-year'/> <a expr:href='data:blog.homepageUrl' itemprop='creator' itemscope='itemscope' itemtype='http://schema.org/Person'><span itemprop='name'><data:blog.title/></span></a> All Right Reserved<span class='credit-link' style='visibility:hidden;'> By <a class='change' href='https://goo.gl/m63rT4' title='EnterBlogger'>JANGAN DIISI NANTI TEMPLATE RUSAK</a>
+<div style='text-align: center;'>
+Copyright &#169; 
+<span id='current-year'/> <a expr:href='data:blog.homepageUrl' itemprop='creator' itemscope='itemscope' itemtype='http://schema.org/Person'><span itemprop='name'><data:blog.title/></span></a>
+</div>
+<span class='credit-link' style='visibility:hidden;'> By <a class='change' href='https://goo.gl/m63rT4' title='EnterBlogger'>JANGAN DIISI NANTI TEMPLATE RUSAK</a>
 </span></div>
 </footer>
 <div class='vikkatotop hider arlniainf'><i class='fa fa-angle-up'/></div>
@@ -1877,14 +1860,40 @@ $(function(){if($("#floatside").length){var o=$("#floatside"),t=$("#floatside").
 //]]>
 </script>
 </b:if>
-</b:if>
 <script type='text/javascript'>
-var disqus_shortname = &quot;infinite-1&quot;;
-!function(){var e=document.createElement(&quot;script&quot;);e.async=!0,e.type=&quot;text/javascript&quot;,e.src=&quot;//&quot;+disqus_shortname+&quot;.disqus.com/count.js&quot;,(document.getElementsByTagName(&quot;head&quot;)[0]||document.getElementsByTagName(&quot;body&quot;)[0]).appendChild(e)}();
+var disqus_shortname = &#39;chaya-template&#39;;
+var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
+if (!disqus_blogger_current_url.length) {
+disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
+}
+var disqus_blogger_homepage_url = &quot;<data:blog.homepageUrl/>&quot;;
+var disqus_blogger_canonical_homepage_url = &quot;<data:blog.canonicalHomepageUrl/>&quot;;
 </script>
-<b:if cond='data:blog.pageType != &quot;index&quot;'>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<style type='text/css'>
+#comments {display:none;}
+</style>
 <script type='text/javascript'>
-!function(){var e=document.createElement(&quot;script&quot;);e.type=&quot;text/javascript&quot;,e.async=!0,e.src=&quot;//&quot;+disqus_shortname+&quot;.disqus.com/blogger_item.js&quot;,(document.getElementsByTagName(&quot;head&quot;)[0]||document.getElementsByTagName(&quot;body&quot;)[0]).appendChild(e)}();
+(function() {
+    var bloggerjs = document.createElement(&#39;script&#39;);
+    bloggerjs.type = &#39;text/javascript&#39;;
+    bloggerjs.async = true;
+    bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_item.js&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+})();
+</script>
+</b:if>
+<style type='text/css'>
+.post-comment-link { visibility: hidden; }
+</style>
+<script type='text/javascript'>
+(function() {
+var bloggerjs = document.createElement(&#39;script&#39;);
+bloggerjs.type = &#39;text/javascript&#39;;
+bloggerjs.async = true;
+bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index.js&#39;;
+(document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+})();
 </script>
 <script type='text/javascript'>
 //Related Post Thumb
