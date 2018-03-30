@@ -127,7 +127,6 @@
             body#layout #wrapper, body#layout .post-inner, body#layout .sidebar-inner {padding:0;}
             body#layout .header-wrapper {margin-top:0;}
             body#layout #header {min-height:0px;width:100%;}
-            body#layout #header-right {width:60%;float:right;}
             #layout,#layout .widget-content,#layout .add_widget {border:none;}
             body#layout .add_widget {border:1px solid #ddd;}
             #layout .add_widget a {color:#333;}
@@ -232,9 +231,6 @@
          #header .title a {color:#222;}
          #header .title a:hover {color:#dd5252;}
          #header p.description {margin:5px auto 0 auto;color:#444;}
-         .header img,.header-right img {display:block;}
-         .header-right img {max-height:90px;}
-         .header-right{float:right;padding:0;overflow:hidden;margin:0;width:100%;max-width:728px}
          /* Nav Wrapper */
          .infinite-nav{background:#fff;position:relative;bottom:0;left:0;right:0;margin:0 auto;padding:0 20px;max-width:970px;z-index:99;height:55px;line-height:55px;border-bottom:1px solid rgba(0,0,0,0.05);border-top:1px solid rgba(0,0,0,0.05);transform:translateZ(0)}
          .infinite-nav.nav-fixed{position:fixed;top:0;bottom:auto}
@@ -446,7 +442,6 @@
          body{background:#fff}
          #content-wrapper{padding:10px}
          #header{padding:20px 10px;}
-         .header-right {float:none;max-width:100%;margin-top:20px;}
          #sidebar-wrapper,#main-wrapper {width:100%;padding:0;border:0}
          .sidebar {padding:0;}
          #footer-wrapper{margin:20px auto 0 auto;padding:0 10px 20px 10px}
@@ -715,9 +710,9 @@
    </head>
 
    <!-- <body><div></div> -->
-
    <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
       
+      <!-- Page 404  -->
       <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
          <div class='container404'>
             <div class='box404'>
@@ -733,261 +728,159 @@
          </div>
       </b:if>
 
-      <div id='wrapper'>
+   <div id='wrapper'>
+      <!-- Start Header  -->
       <div id='header' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
-         <b:section id='header-left' maxwidgets='2' showaddelement='no'>
-            <b:widget id='Header1' locked='true' title='Ash Haabul Yamiiin (Header)' type='Header' version='1'>
-               <b:widget-settings>
-                  <b:widget-setting name='displayUrl'/>
-                  <b:widget-setting name='displayHeight'>0</b:widget-setting>
-                  <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
-                  <b:widget-setting name='useImage'>false</b:widget-setting>
-                  <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-                  <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
-                  <b:widget-setting name='displayWidth'>0</b:widget-setting>
-               </b:widget-settings>
-               <b:includable id='main'>
-                  <b:if cond='data:useImage'>
-                     <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
-                        <b:if cond='data:mobile'>
-                           <div id='header-inner'>
-                              <div class='titlewrapper' style='background: transparent'>
-                                 <b:include name='title'/>
-                              </div>
-                              <b:include name='description'/>
-                           </div>
-                           <b:else/>
-                           <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                        + &quot;background-position: &quot;                        + data:backgroundPositionStyleStr + &quot;; &quot;                        + data:widthStyleStr                        + &quot;min-height: &quot; + data:height                        + &quot;_height: &quot; + data:height                        + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
-                              <div class='titlewrapper' style='background: transparent'>
-                                 <b:include name='title'/>
-                              </div>
-                              <b:include name='description'/>
-                           </div>
-                        </b:if>
-                        <b:else/>
-                        <!--Show the image only-->
-                        <div id='header-inner'>
-                           <a expr:href='data:blog.homepageUrl' style='display: block'>
-                           <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
-                           </a>
-                           <!--Show the description-->
-                           <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
-                              <b:include name='description'/>
-                           </b:if>
-                        </div>
-                     </b:if>
-                     <b:else/>
-                     <!--No header image -->
-                     <div id='header-inner'>
-                        <div class='titlewrapper'>
-                           <b:include name='title'/>
-                        </div>
-                        <b:include name='description'/>
-                     </div>
-                  </b:if>
-               </b:includable>
-               <b:includable id='description'>
-                  <div class='descriptionwrapper'>
-                     <p class='description'>
-                        <span>
-                           <data:description/>
-                        </span>
-                     </p>
-                  </div>
-               </b:includable>
-               <b:includable id='title'>
-                  <b:if cond='data:blog.pageType != &quot;item&quot;'>
-                     <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-                        <h1 class='title'>
-                           <a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'>
-                              <span itemprop='name'>
-                                 <data:title/>
-                              </span>
-                           </a>
-                        </h1>
-                        <b:else/>
-                        <h2 class='title'>
-                           <a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'>
-                              <span itemprop='name'>
-                                 <data:title/>
-                              </span>
-                           </a>
-                        </h2>
-                     </b:if>
-                     <b:else/>
-                     <h2 class='title'>
-                        <a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' itemprop='url'>
-                           <span itemprop='name'>
-                              <data:title/>
-                           </span>
-                        </a>
-                     </h2>
-                  </b:if>
-               </b:includable>
-            </b:widget>
-         </b:section>
-         <!-- <b:section class='header-right section' id='header-right' maxwidgets='1' showaddelement='yes'/> -->
-      </div>
+         <b:section id='header-left' maxwidgets='1' showaddelement='yes'></b:section>
+         <b:section id='header-right' maxwidgets='1' showaddelement='yes'></b:section>
+      </div> 
       <div class='clear'/>
+
+
+      <!-- Nav / Menu Start  -->
       <nav class='infinite-nav' data-menu-responsive='992' itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement' role='navigation'>
       <div class='container'>
+         <!-- Menu Mobile -->
          <div class='open-menu'>
             <span class='item item-1'/>
             <span class='item item-2'/>
             <span class='item item-3'/>
          </div>
-         <div class='close-menu'/>
-            <ul class='navlist'>
-               <li><a href='/' itemprop='url'><span itemprop='name'>Home</span></a></li>
-               <li>
-                  <a href='#' itemprop='url'><span itemprop='name'>Menu Utama</span></a>
-                  <ul class='sub-menu'>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 1</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 2</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 3</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 4</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 5</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 6</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 7</span></a></li>
-                  </ul>
-               </li>
-               <li>
-                  <a href='#' itemprop='url'><span itemprop='name'>Menu Kedua</span></a>
-                  <ul class='sub-menu'>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 1</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 2</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 3</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 4</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 5</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 6</span></a></li>
-                     <li><a href='#' itemprop='url'><span itemprop='name'>Menu 7</span></a></li>
-                  </ul>
-               </li>
-               <li class='megamenu col-5'>
-                  <a href='#'><span itemprop='name'>ionic</span></a>
-                  <script class='java' type='text/javascript'>//<![CDATA[
-                     var numposts = 5;
-                     var outerclass = "sub-menu";
-                     var starttag = "<li>";
-                     var endtag = "</li>";
-                     var intag = "div";
-                     //]]>
-                  </script>
-                  <script class='java' src='/feeds/posts/default/-/ionic?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
-                     </li>
-                         
-                      </ul>
-                      <div class='search-box'>
-                      <span class='icon-search'>
-                      <i class='fa fa-search'/>
-                      </span>
-                      <form action='/search' method='get'>
-                      <input name='q' onblur='if(this.value==&apos;&apos;)this.value=this.defaultValue;' onfocus='if(this.value==this.defaultValue)this.value=&apos;&apos;;' type='search' value='Search and hit enter'/>
-                      </form>
-                      </div>
-                      <div class='share-box'>
-                      <a class='social-facebook' href='#' rel='nofollow' target='_blank'><i class='fa fa-facebook'/></a>
-                      <a class='social-twitter' href='#' rel='nofollow' target='_blank'><i class='fa fa-twitter'/></a>
-                      <a class='social-gplus' href='#' rel='nofollow' target='_blank'><i class='fa fa-google-plus'/></a>
-                      <a class='social-linkedin' href='#' rel='nofollow' target='_blank'><i class='fa fa-linkedin'/></a>
-                      <a class='social-pinterest' href='#' rel='nofollow' target='_blank'><i class='fa fa-pinterest'/></a>
-                      <a class='social-youtube' href='#' rel='nofollow' target='_blank'><i class='fa fa-youtube'/></a>
-                      <a class='social-instagram' href='#' rel='nofollow' target='_blank'><i class='fa fa-instagram'/></a>
-                      </div>
-                      </div>
-                     </nav>
-                     <b:if cond='data:blog.url == data:blog.homepageUrl'>
-                     <div class='ct-wrapper' id='feature-posts-section'>
-                     <div class='feature-post padding clearfix'>     
-                     <script type='text/javaScript'>
-                     document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/?max-results=&quot;+featured_numposts+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=sliderposts\&quot;&gt;&lt;\/script&gt;&quot;);
-                  </script>                                                                                                
+         <!-- Menu Desktop  -->
+         <div class='close-menu'> </div>
+         <ul class='navlist'>
+            <li><a href='/' itemprop='url'><span itemprop='name'>Home</span></a></li>
+            <li>
+               <a href='#' itemprop='url'><span itemprop='name'>Menu Utama</span></a>
+               <ul class='sub-menu'>
+                  <li><a href='#' itemprop='url'><span itemprop='name'>Menu 1</span></a></li>
+                  <li><a href='#' itemprop='url'><span itemprop='name'>Menu 2</span></a></li>
+               </ul>
+            </li>
+            <li class='megamenu col-5'>
+               <a href='#'><span itemprop='name'>ionic</span></a>
+               <script class='java' type='text/javascript'>//<![CDATA[
+                  var numposts = 5;
+                  var outerclass = "sub-menu";
+                  var starttag = "<li>";
+                  var endtag = "</li>";
+                  var intag = "div";
+                  //]]>
+               </script>
+               <script class='java' src='/feeds/posts/default/-/ionic?alt=json-in-script&amp;callback=labelthumbs' type='text/javascript'/>
+            </li>
+         </ul>
+
+         <!-- Share Box  -->
+         <div class='share-box'>
+            <a class='social-facebook' href='#' rel='nofollow' target='_blank'><i class='fa fa-facebook'/></a>
+            <a class='social-twitter' href='#' rel='nofollow' target='_blank'><i class='fa fa-twitter'/></a>
+            <a class='social-gplus' href='#' rel='nofollow' target='_blank'><i class='fa fa-google-plus'/></a>
+            <a class='social-linkedin' href='#' rel='nofollow' target='_blank'><i class='fa fa-linkedin'/></a>
+            <a class='social-pinterest' href='#' rel='nofollow' target='_blank'><i class='fa fa-pinterest'/></a>
+            <a class='social-youtube' href='#' rel='nofollow' target='_blank'><i class='fa fa-youtube'/></a>
+            <a class='social-instagram' href='#' rel='nofollow' target='_blank'><i class='fa fa-instagram'/></a>
+         </div>
+
+         <!-- Search Box -->
+         <div class='search-box'>
+            <span class='icon-search'> <i class='fa fa-search'/> </span>
+            <form action='/search' method='get'>
+               <input name='q' onblur='if(this.value==&apos;&apos;)this.value=this.defaultValue;' onfocus='if(this.value==this.defaultValue)this.value=&apos;&apos;;' type='search' value='Search and hit enter'/>
+            </form>
          </div>
       </div>
-      </b:if>
+      </nav>
+      <!-- End Nav Menu -->
+
+      <!-- Slider Home  -->
+      <!-- <b:if cond='data:blog.url == data:blog.homepageUrl'>
+      <div class='ct-wrapper' id='feature-posts-section'>
+         <div class='feature-post padding clearfix'>     
+            <script type='text/javaScript'>
+               document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/?max-results=&quot;+featured_numposts+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=sliderposts\&quot;&gt;&lt;\/script&gt;&quot;);
+            </script>         
+         </div>
+      </div>
+      </b:if> -->
+      <!-- End Slider  -->
+
+      <!-- Start CONTENT WRAPPER  -->
       <div id='content-wrapper' itemscope='itemscope' itemtype='http://schema.org/Blog' role='main'>
-      <b:section class='banner section' id='banner' maxwidgets='1' showaddelement='yes'>
-      <b:widget id='HTML96' locked='false' title='' type='HTML' version='1'>
-      <b:includable id='main'>
-      <!-- only display title if it's non-empty -->
-      <b:if cond='data:title != &quot;&quot;'>
-      <h2 class='title'><data:title/></h2>
-      </b:if>
-      <div class='widget-content'>
-      <data:content/>
-      </div>
-      </b:includable>
-      </b:widget>
-      </b:section>
+         <b:section class='banner section' id='banner' maxwidgets='1' showaddelement='yes'/>
+
       <div id='main-wrapper'>
-      <b:section class='main' id='main' showaddelement='no'>
-      <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
-      <b:widget-settings>
-      <b:widget-setting name='commentLabel'>komentar</b:widget-setting>
-      <b:widget-setting name='showShareButtons'>false</b:widget-setting>
-      <b:widget-setting name='authorLabel'>By</b:widget-setting>
-      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-      <b:widget-setting name='timestampLabel'>a la/s</b:widget-setting>
-      <b:widget-setting name='reactionsLabel'>Reaksi:</b:widget-setting>
-      <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-      <b:widget-setting name='showLocation'>false</b:widget-setting>
-      <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
-      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='backlinksLabel'>Link ke posting ini</b:widget-setting>
-      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-      <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
-      <b:widget-setting name='showAuthor'>true</b:widget-setting>
-      <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
-      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-      <b:widget-setting name='showLabels'>true</b:widget-setting>
-      <b:widget-setting name='postLabelsLabel'>Label:</b:widget-setting>
-      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
-      <b:widget-setting name='showReactions'>false</b:widget-setting>
-      </b:widget-settings>
-      <b:includable id='main' var='top'>
-      <b:include data='posts' name='breadcrumb'/>
-      <b:if cond='data:mobile == &quot;false&quot;'>
-      <!-- posts -->
-      <div class='blog-posts hfeed'>
-      <b:include data='top' name='status-message'/>
-      <data:defaultAdStart/>
-      <b:loop values='data:posts' var='post'>
-      <b:if cond='data:post.isDateStart'>
-      <b:if cond='data:post.isFirstPost == &quot;false&quot;'>
-      &lt;/div&gt;&lt;/div&gt;
-      </b:if>
-      </b:if>
-      <b:if cond='data:post.isDateStart'>
-      &lt;div class=&quot;date-outer&quot;&gt;
-      </b:if>
-      <b:if cond='data:post.dateHeader'>
-      <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
-      </b:if>
-      <b:if cond='data:post.isDateStart'>
-      &lt;div class=&quot;date-posts&quot;&gt;
-      </b:if>
-      <div class='post-outer'>
-      <b:include data='post' name='post'/>
-      <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
-      <b:if cond='data:post.showThreadedComments'>
-      <b:include data='post' name='threaded_comments'/>
-      <b:else/>
-      <b:include data='post' name='comments'/>
-      </b:if>
-      </b:if>
-      <b:if cond='data:blog.pageType == &quot;item&quot;'>
-      <b:if cond='data:post.showThreadedComments'>
-      <b:include data='post' name='threaded_comments'/>
-      <b:else/>
-      <b:include data='post' name='comments'/>
-      </b:if>
-      </b:if>
-      </div>
+         <b:section class='main' id='main' showaddelement='no'>
+            <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+               <b:widget-settings>
+               <b:widget-setting name='commentLabel'>komentar</b:widget-setting>
+               <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+               <b:widget-setting name='authorLabel'>By</b:widget-setting>
+               <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+               <b:widget-setting name='timestampLabel'>a la/s</b:widget-setting>
+               <b:widget-setting name='reactionsLabel'>Reaksi:</b:widget-setting>
+               <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+               <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+               <b:widget-setting name='showLocation'>false</b:widget-setting>
+               <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+               <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+               <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+               <b:widget-setting name='backlinksLabel'>Link ke posting ini</b:widget-setting>
+               <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+               <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+               <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+               <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+               <b:widget-setting name='showAuthor'>true</b:widget-setting>
+               <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+               <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+               <b:widget-setting name='showLabels'>true</b:widget-setting>
+               <b:widget-setting name='postLabelsLabel'>Label:</b:widget-setting>
+               <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+               <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+               <b:widget-setting name='showReactions'>false</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main' var='top'>
+            <b:include data='posts' name='breadcrumb'/>
+            <b:if cond='data:mobile == &quot;false&quot;'>
+            <!-- posts -->
+            <div class='blog-posts hfeed'>
+               <b:include data='top' name='status-message'/>
+               <data:defaultAdStart/>
+               <b:loop values='data:posts' var='post'>
+               <b:if cond='data:post.isDateStart'>
+                  <b:if cond='data:post.isFirstPost == &quot;false&quot;'>
+                     &lt;/div&gt;&lt;/div&gt;
+                  </b:if>
+               </b:if>
+               <b:if cond='data:post.isDateStart'>
+                  &lt;div class=&quot;date-outer&quot;&gt;
+               </b:if>
+               <b:if cond='data:post.dateHeader'>
+                  <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+               </b:if>
+               <b:if cond='data:post.isDateStart'>
+                  &lt;div class=&quot;date-posts&quot;&gt;
+               </b:if>
+            <div class='post-outer'>
+            
+            <b:include data='post' name='post'/>
+               <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+                  <b:if cond='data:post.showThreadedComments'>
+                     <b:include data='post' name='threaded_comments'/>
+                  <b:else/>
+                     <b:include data='post' name='comments'/>
+                  </b:if>
+               </b:if>
+         
+               <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                  <b:if cond='data:post.showThreadedComments'>
+                     <b:include data='post' name='threaded_comments'/>
+                  <b:else/>
+                     <b:include data='post' name='comments'/>
+                  </b:if>
+               </b:if>
+            </div>
+
       <b:if cond='data:post.includeAd'>
       <b:if cond='data:post.isFirstPost'>
       <data:defaultAdEnd/>
@@ -1787,8 +1680,8 @@
          </div>
          </div>
          <div class='clear'>&#160;</div>
-      </div>
-      <div class='clear'/>
+         </div>
+         <div class='clear'/>
          <b:section class='banner2 section' id='banner2' maxwidgets='1' showaddelement='yes'>
             <b:widget id='HTML98' locked='false' title='' type='HTML' version='1'>
                <b:widget-settings>
@@ -1814,6 +1707,8 @@
             </b:widget>
          </b:section>
       </div>
+      <!-- End Wrapper  -->
+
       <div class='clear'/>
       <footer id='footer-wrapper' itemscope='itemscope' itemtype='http://schema.org/WPFooter'>
          <div class='arlina-border'>
